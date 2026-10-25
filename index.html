@@ -64,12 +64,12 @@ video{width:100%;max-width:960px;display:block;margin:0 auto;border-radius:12px;
 </div>
 
 <h2 class="prev">前の版</h2>
-<p class="note"><a href="v5.html">前の版（冒頭3パターン × アニメ／実写／実写＋アニメの9本）はこちら</a></p>
+<p class="note"><a href="v8.html">1つ前の版（v8）はこちら</a>　／　<a href="v5.html">その前の版（冒頭3パターン × アニメ／実写／実写＋アニメの9本）はこちら</a></p>
 </div>
 <script>
 var P={
- anime:{label:"アニメーションのみ",desc:"背景も人物もアニメ調で描いたイメージです。",video:"video8/anime.mp4"},
- hybrid:{label:"実写＋アニメーション",desc:"背景はお店の写真、人物だけをアニメ調で描いたイメージです。",video:"video8/hybrid.mp4"}
+ anime:{label:"アニメーションのみ",desc:"背景も人物もアニメ調で描いたイメージです。",video:"video10/anime.mp4"},
+ hybrid:{label:"実写＋アニメーション",desc:"背景はお店の写真、人物だけをアニメ調で描いたイメージです。",video:"video10/hybrid.mp4"}
 };
 var cur="hybrid";
 function render(){
@@ -80,8 +80,8 @@ function render(){
  if(v.getAttribute("src")!==P[cur].video){v.setAttribute("src",P[cur].video);}
  var g="";
  for(var i=0;i<13;i++){
-  var s=("0"+i).slice(-2), sec=Math.round(3+4.2*i);
-  g+='<figure><img src="img8/'+cur+'_'+s+'.jpg" alt="" loading="lazy"><figcaption>約'+sec+'秒</figcaption></figure>';
+  var s=("0"+i).slice(-2), sec=Math.round(3+4.4*i);
+  g+='<figure><img src="img10/'+cur+'_'+s+'.jpg" alt="" loading="lazy"><figcaption>約'+sec+'秒</figcaption></figure>';
  }
  document.getElementById("grid").innerHTML=g;
 }
