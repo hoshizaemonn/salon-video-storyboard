@@ -57,19 +57,19 @@ video{width:100%;max-width:960px;display:block;margin:0 auto;border-radius:12px;
 <div class="box">
 <ul>
 <li>新しい<b>看板のデザインデータ</b>（動画の中の看板を、実際のデザインに差し替えます）</li>
-<li>駅から店舗までの<b>実際の道のりの写真</b>（冒頭の駅前・商店街を、実際のルートに合わせます）</li>
+<li>駅から店舗までの<b>実際の道のりの写真</b>（冒頭の駅から店までの道のりを、実際の写真に差し替えます）</li>
 <li>背中に当てる機器の<b>単体の写真</b>（機器の形をより正確に描きます）</li>
 </ul>
-<p class="note" style="margin:8px 0 0">外観・駅前・商店街の場面と、看板は仮のイメージです。</p>
+<p class="note" style="margin:8px 0 0">外観・駅から店までの道のり・看板は仮のイメージです（地図サービスの景色を構図の参考にした描き起こしで、本番は実際の写真に差し替えます）。</p>
 </div>
 
 <h2 class="prev">前の版</h2>
-<p class="note"><a href="v8.html">1つ前の版（v8）はこちら</a>　／　<a href="v5.html">その前の版（冒頭3パターン × アニメ／実写／実写＋アニメの9本）はこちら</a></p>
+<p class="note"><a href="v10.html">1つ前の版（v10）はこちら</a>　／　<a href="v8.html">v8はこちら</a>　／　<a href="v5.html">その前の版（冒頭3パターン × アニメ／実写／実写＋アニメの9本）はこちら</a></p>
 </div>
 <script>
 var P={
- anime:{label:"アニメーションのみ",desc:"背景も人物もアニメ調で描いたイメージです。",video:"video10/anime.mp4"},
- hybrid:{label:"実写＋アニメーション",desc:"背景はお店の写真、人物だけをアニメ調で描いたイメージです。",video:"video10/hybrid.mp4"}
+ anime:{label:"アニメーションのみ",desc:"背景も人物もアニメ調で描いたイメージです。",video:"video14/anime.mp4"},
+ hybrid:{label:"実写＋アニメーション",desc:"背景はお店の写真、人物だけをアニメ調で描いたイメージです。",video:"video14/hybrid.mp4"}
 };
 var cur="hybrid";
 function render(){
@@ -79,9 +79,9 @@ function render(){
  var v=document.getElementById("vd");
  if(v.getAttribute("src")!==P[cur].video){v.setAttribute("src",P[cur].video);}
  var g="";
- for(var i=0;i<13;i++){
-  var s=("0"+i).slice(-2), sec=Math.round(3+4.4*i);
-  g+='<figure><img src="img10/'+cur+'_'+s+'.jpg" alt="" loading="lazy"><figcaption>約'+sec+'秒</figcaption></figure>';
+ for(var i=0;i<14;i++){
+  var s=("0"+i).slice(-2), sec=Math.round(4+4.9*i);
+  g+='<figure><img src="img14/'+cur+'_'+s+'.jpg" alt="" loading="lazy"><figcaption>約'+sec+'秒</figcaption></figure>';
  }
  document.getElementById("grid").innerHTML=g;
 }
